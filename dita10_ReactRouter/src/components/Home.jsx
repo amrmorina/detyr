@@ -40,6 +40,15 @@ function Home() {
           <h3>Project Three</h3>
           <p>Responsive design that looks beautiful on every screen size.</p>
         </div>
+
+        <div className="gallery-item">
+          <img
+            src="./public/OIP.webp"
+            alt="Project 4"
+          />
+          <h3>Project Four</h3>
+          <p>Seamless navigation with React Router for a smooth user journey.</p>
+        </div>
       </section>
     </div>
   );

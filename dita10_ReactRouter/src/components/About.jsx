@@ -3,6 +3,7 @@ import "./About.css"; // Import the CSS file
 
 function About() {
   return (
+    <>
     <div className="about-page">
       <div className="about-card">
         <img
@@ -19,8 +20,24 @@ function About() {
             creative ideas into real digital experiences.
           </p>
         </div>
+        
+      </div>
+      <div className="about-skills">
+        <div className="skills-card"> 
+          <h2>Skills</h2>
+        <ul>
+          <li>JavaScript </li>
+          <li>React.js</li>
+          <li>HTML & CSS</li>
+          <li>Responsive Web Design</li>
+          <li>Git & GitHub</li>
+          <li>Laravel</li>
+         
+        </ul>
+        </div>
       </div>
     </div>
+    </>
   );
 }
 
