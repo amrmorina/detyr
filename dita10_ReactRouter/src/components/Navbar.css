@@ -9,6 +9,8 @@
   width: 100%;
   height: 60px;
   z-index: 1000;
+  margin: 0;
+
 }
 
 .navbar a {
@@ -22,4 +24,9 @@
 
 .navbar a:hover {
   color: #00bfff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
