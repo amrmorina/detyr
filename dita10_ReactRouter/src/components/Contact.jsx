@@ -23,8 +23,7 @@ function Contact() {
       <div className="contact-card">
         <h1>Contact Me</h1>
         <p>
-          Have a question, a project, or just want to say hi?  
-          Fill out the form below and I’ll get back to you soon.
+          Have a question?  
         </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
