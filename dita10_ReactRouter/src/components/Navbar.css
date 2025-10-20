@@ -1,9 +1,9 @@
 .navbar {
   background-color: #333;
   display: flex;
-  justify-content: center;   /* Center the nav links */
+  justify-content: center;
   align-items: center;
-  gap: 40px;                 /* <-- this controls spacing between links */
+  gap: 40px;            
   position: fixed;
   top: 0;
   width: 100%;

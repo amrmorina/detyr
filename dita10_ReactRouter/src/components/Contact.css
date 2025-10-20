@@ -1,4 +1,4 @@
-/* Page background */
+
 .contact-page {
   min-height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Contact card */
+
 .contact-card {
   background: white;
   border-radius: 20px;
@@ -21,7 +21,7 @@
   animation: slideUp 1s ease;
 }
 
-/* Title and description */
+
 .contact-card h1 {
   color: #333;
   font-size: 2.5rem;
@@ -34,7 +34,7 @@
   font-size: 1.1rem;
 }
 
-/* Form */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@
   outline: none;
 }
 
-/* Button */
+
 .contact-form button {
   padding: 14px;
   background: linear-gradient(135deg, #764ba2, #667eea);
@@ -74,7 +74,7 @@
   background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
