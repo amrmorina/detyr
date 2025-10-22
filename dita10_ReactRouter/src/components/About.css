@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+   background: linear-gradient(to bottom right, #3b2a1a, #9b6b4b);
   padding: 20px;
   animation: fadeIn 1.2s ease-in-out;
 }

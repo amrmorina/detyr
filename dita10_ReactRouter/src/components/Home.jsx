@@ -1,57 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 
-function Home() {
+const Home = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:800/products")
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+      .catch((err) => console.error("Failed to load products:", err));
+  }, []);
+
   return (
-    <div className="home-page">
-      <section className="hero">
+    <div className="home-container">
+      <header className="header">
         <h1>Welcome to My Website</h1>
         <p>
-          I'm Amr — a web developer passionate about crafting interactive,
-          modern, and responsive experiences using React. Explore my work,
-          learn more about me, or get in touch!
+          I'm Amr — a web developer passionate about crafting interactive, modern,
+          and responsive experiences using React. Explore my work, learn more about me,
+          or get in touch!
         </p>
-      </section>
+      </header>
 
-      <section className="gallery">
-        <div className="gallery-item">
-          <img
-            src="./public/sdsa.jpg"
-            alt="Project 1"
-          />
-          <h3>Project One</h3>
-          <p>A creative web app showcasing modern UI and clean design.</p>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            src="./public/sa.jpg"
-            alt="Project 2"
-          />
-          <h3>Project Two</h3>
-          <p>Building interactive and dynamic features using React hooks.</p>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            src="./public/das.webp"
-            alt="Project 3"
-          />
-          <h3>Project Three</h3>
-          <p>Responsive design that looks beautiful on every screen size.</p>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            src="./public/OIP.webp"
-            alt="Project 4"
-          />
-          <h3>Project Four</h3>
-          <p>Seamless navigation with React Router for a smooth user journey.</p>
+      <section className="products">
+        <h2>Our Products</h2>
+        <div className="product-grid">
+          {products.map((item) => (
+            <div key={item.id} className="product-card">
+              <img src={item.image} alt={item.name} />
+              <h3>{item.name}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </div>
   );
-}
+};
 
 export default Home;
